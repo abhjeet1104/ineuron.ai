@@ -1,0 +1,35 @@
+Question -1 
+What is the difference between enclosing a list comprehension in square brackets and parentheses?
+
+Solution -1 
+Brackets [] and parentheses () difference is that square brackets can describe a list comprehension,
+e.g. [x for x in y] Whereas the corresponding parenthesis () syntax specifies a tuple generator: (x for x in y). 
+One thing to remember is that tuples are not mutable whereas list are mutable.
+
+Question -2
+What is the relationship between generators and iterators?
+
+Solution -2
+Generators simplifies creation of iterators. Generator is a function that generates a sequence of results instead of a single value. 
+When yield statement is executed the function generates a next value in a list. Generator is also an iterator but don’t have to worry about the iterator protocol.
+
+Question -3
+What are the signs that a function is a generator function?
+
+Solution -3
+If a function contains yield statement (it may contain other yield or return statements), it is called a generator function.
+
+Question -4
+What is the purpose of a yield statement?
+
+Solution -4
+A yield statement looks much like a return statement, except that instead of stopping execution of the function and returning,
+yield instead provides a value to the code looping over the generator and pauses execution of the generator function.
+
+Question -5
+What is the relationship between map calls and list comprehensions? Make a comparison and contrast between the two.
+
+Solution -5
+List comprehension are used when a list of results is required as map only returns a map object and does not return any list. 
+List comprehension is faster than map when we need to evaluate expressions that are too long or complicated to express
+Map is faster in case of calling an already defined function (as no lambda is required).
