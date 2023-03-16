@@ -1,0 +1,63 @@
+Question -1
+What is the relationship between def statements and lambda expressions ?
+
+Solution -1
+The difference is that the body of a lambda can consist of only a single expression,
+the result of which is returned from the function created and a lambda expression is an expression which evaluates to a function object, 
+while a def statement has no value, and creates a function object and binds it to a name.
+
+Question -2
+What is the benefit of lambda?
+
+Solution -2
+One of the most benefits of a lambda expression is to reduce the amount of code. 
+We know that lambda expressions can be used only with a functional interface. For instance, Runnable is a functional interface, so we can easily apply lambda expressions.
+
+Question -3
+Compare and contrast map, filter, and reduce.
+
+Solution -3
+Map - Map function in python takes two parameters. First is the function or lambda that is used for mapping and second is the list of data to map. 
+For example: map(func, sequence)
+
+Filter - Filter function filters out the elements from a list given a filter function that returns a boolean. 
+The First parameter is a function that returns a boolean the second parameter is a list to filter. 
+
+Reduce - Reduce function continuously applies the function to the sequence. The first parameter is the function and the second parameter is the list.
+
+Question -4
+What are function annotations, and how are they used?
+
+Solution -4
+Function annotations are arbitrary python expressions that are associated with various part of functions. These expressions are evaluated at compile time and have no life in python’s runtime environment.
+Python does not attach any meaning to these annotations.
+
+Question -5
+What are recursive functions, and how are they used?
+
+Solution -5
+Recursive Function is a function that repeats or uses its own previous term to calculate subsequent terms and thus forms a sequence of terms. Usually, we learn about this function based on the arithmetic-geometric sequence,
+which has terms with a common difference between them.
+
+Question -6
+What are some general design guidelines for coding functions?
+
+Solution -6
+Coding rules and guidelines ensure that software is:
+
+Safe: It can be used without causing harm.
+Secure: It can’t be hacked.
+Reliable: It functions as it should, every time.
+Testable: It can be tested at the code level.
+Maintainable: It can be maintained, even as your codebase grows.
+Portable: It works the same in every environment.
+
+Question -7
+Name three or more ways that functions can communicate results to a caller.
+
+Solution -7
+To call a function, use the function name followed by parenthesis:
+When we construct one function inside another, it is called a nested function. We can create nested functions using the def keyword.
+After creating the function, we have to call the outer and the inner function to execute the statement.
+Lets' create a program to understand the concept of nested functions and how we can call these functions.
+
